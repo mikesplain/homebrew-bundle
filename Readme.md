@@ -33,6 +33,7 @@ Add your dependencies in your `Brewfile`:
 cask_args appdir: "/Applications"
 tap "homebrew/cask"
 tap "telemachus/brew", "https://telemachus@bitbucket.org/telemachus/brew.git"
+tap "telemachus/brew", pin: true
 brew "imagemagick"
 brew "mysql@5.6", restart_service: true, link: true, conflicts_with: ["mysql"]
 brew "emacs", args: ["with-cocoa", "with-gnutls"]
